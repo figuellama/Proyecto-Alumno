@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($stmt->execute()) {
             if ($stmt->affected_rows > 0) {
                 // Borrado exitoso
-                $mensaje = "✅ ¡Registro con ID **{$id_a_borrar}** borrado exitosamente!";
+                $mensaje = " ¡Registro con ID **{$id_a_borrar}** borrado exitosamente!";
             } else {
                 // No se encontró el ID
                 $mensaje = " No se encontró ningún registro con ID **{$id_a_borrar}** para borrar.";
@@ -92,3 +92,4 @@ $conn->close();
 </body>
 
 </html>
+
