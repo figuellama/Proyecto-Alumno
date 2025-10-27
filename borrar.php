@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mensaje = "✅ ¡Registro con ID **{$id_a_borrar}** borrado exitosamente!";
             } else {
                 // No se encontró el ID
-                $mensaje = "⚠️ No se encontró ningún registro con ID **{$id_a_borrar}** para borrar.";
+                $mensaje = " No se encontró ningún registro con ID **{$id_a_borrar}** para borrar.";
             }
         } else {
             // Error en la ejecución
@@ -90,4 +90,5 @@ $conn->close();
         <a href="index.php" class="btn-volver">Volver a la Lista</a>
     </div>
 </body>
+
 </html>
